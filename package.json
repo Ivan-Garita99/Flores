@@ -1,0 +1,29 @@
+{
+    "name": "my-app",
+    "version": "1.0.0",
+    "description": "My Electron App",
+    "main": "main.js",
+    "scripts": {
+        "start": "electron .",
+        "build": "electron-builder"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "electron": "^16.0.2"
+    },
+    "devDependencies": {
+        "electron-builder": "^22.16.0"
+    },
+    "build": {
+        "appId": "com.miweb.myapp",
+        "productName": "Mi Aplicación Web",
+        "directories": {
+            "output": "dist"
+        },
+        "win": {
+            "target": "nsis"
+        }
+    }
+}
